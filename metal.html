@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Créations en Métal - Frabrication</title>
+    <title>Frabrication - Créations en Bois et Métal</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,15 +11,31 @@
         <nav>
             <div class="logo">Frabrication</div>
             <ul class="nav-links">
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#" class="active">Accueil</a></li>
                 <li><a href="bois.html">Bois</a></li>
-                <li><a href="metal.html" class="active">Métal</a></li>
+                <li><a href="metal.html">Métal</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Nos Créations en Métal</h1>
+        <section class="hero">
+            <h1>Frabrication</h1>
+            <p>Découvrez nos créations artisanales en bois et métal</p>
+        </section>
+
+        <section class="categories">
+            <div class="category-card">
+                <h2>Bois</h2>
+                <p>Explorez nos créations uniques en bois</p>
+                <a href="bois.html" class="btn">Découvrir</a>
+            </div>
+            <div class="category-card">
+                <h2>Métal</h2>
+                <p>Découvrez nos œuvres en métal</p>
+                <a href="metal.html" class="btn">Découvrir</a>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -31,5 +47,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
