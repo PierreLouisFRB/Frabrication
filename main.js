@@ -91,6 +91,32 @@ function initScrollAnimations() {
     });
 }
 
+// Carrousel
+window.onload = function() {
+    // Initialiser le carrousel
+    const carousel = document.querySelector('.carousel-images');
+    if (!carousel) return;
+
+    const images = carousel.querySelectorAll('img');
+    let currentIndex = 0;
+
+    // Afficher la première image
+    images[0].classList.add('visible');
+
+    // Gérer les boutons
+    document.querySelector('.carousel-button.prev').onclick = function() {
+        images[currentIndex].classList.remove('visible');
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        images[currentIndex].classList.add('visible');
+    }
+
+    document.querySelector('.carousel-button.next').onclick = function() {
+        images[currentIndex].classList.remove('visible');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('visible');
+    }
+};
+
 // Initialisation
 document.addEventListener('DOMContentLoaded', () => {
     initParticles();
